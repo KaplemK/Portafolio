@@ -1,0 +1,51 @@
+.contenedor-habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 6% 80px;
+}
+
+.habilidad {
+    width: 220px;
+    min-height: 210px;
+    padding: 30px 22px;
+    text-align: center;
+    background: var(--card);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.habilidad:hover {
+    transform: translateY(-10px);
+    border-color: var(--color, var(--azul));
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4),
+                0 0 24px color-mix(in srgb, var(--color, #2ea1fa) 25%, transparent);
+}
+
+.habilidad .icono {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 52px;
+    color: var(--color, var(--azul));
+    transition: transform 0.3s ease;
+}
+
+.habilidad:hover .icono {
+    transform: scale(1.15);
+}
+
+.habilidad h2 {
+    margin-bottom: 8px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.habilidad p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--suave);
+}

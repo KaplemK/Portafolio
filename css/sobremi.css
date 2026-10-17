@@ -1,0 +1,50 @@
+.sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding: 20px 8% 40px;
+}
+
+.tarjeta-texto {
+    width: 520px;
+    max-width: 100%;
+    padding: 34px;
+    background: var(--card);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.tarjeta-texto:hover {
+    transform: translateY(-8px);
+    border-color: var(--azul);
+    box-shadow: 0 15px 35px rgba(46, 161, 250, 0.14);
+}
+
+.tarjeta-texto p {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--suave);
+}
+
+.tarjeta-texto p:last-child {
+    margin-bottom: 0;
+}
+
+.tarjeta-texto strong {
+    color: var(--texto);
+    font-weight: 600;
+}
+
+.sobre-mi .terminal {
+    width: 400px;
+    align-self: flex-start;
+}
+
+.centro-boton {
+    text-align: center;
+    padding: 10px 8% 70px;
+}

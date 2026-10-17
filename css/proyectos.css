@@ -1,0 +1,126 @@
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 6% 80px;
+}
+
+.tarjeta-proyecto {
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    border-color: var(--violeta);
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.22);
+}
+
+.proyecto-barra {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--borde);
+}
+
+.proyecto-barra i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--borde);
+}
+
+.proyecto-barra span {
+    margin-left: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--suave);
+}
+
+.proyecto-cuerpo {
+    padding: 26px;
+}
+
+.icono-proyecto {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: var(--azul);
+    background: rgba(46, 161, 250, 0.1);
+    border-radius: 14px;
+}
+
+.categoria {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--violeta);
+}
+
+.tarjeta-proyecto h3 {
+    margin: 10px 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.tarjeta-proyecto p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--suave);
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tecnologias span {
+    padding: 6px 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--azul);
+    background: rgba(46, 161, 250, 0.1);
+    border-radius: 8px;
+}
+
+.enlace-proyecto {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.enlace-proyecto span {
+    transition: transform 0.3s ease;
+}
+
+.enlace-proyecto:hover {
+    color: var(--violeta);
+}
+
+.enlace-proyecto:hover span {
+    transform: translate(4px, -4px);
+}
+
+@media (max-width: 900px) {
+    .contenedor-proyectos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+    .contenedor-proyectos { grid-template-columns: 1fr; }
+}
